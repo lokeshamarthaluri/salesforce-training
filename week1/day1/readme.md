@@ -42,4 +42,7 @@ This is when the traveler is seriously about to book a trip. Like they picked da
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7650f0f0-ee17-460c-8984-722ad98dbdea" />
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ea4e286c-4526-41f0-b9b1-72e91dd3e8e6" />
+
+
 
