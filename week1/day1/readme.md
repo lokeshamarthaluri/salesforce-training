@@ -37,4 +37,5 @@ This is when the traveler is seriously about to book a trip. Like they picked da
 
 ## 5. Trailhead Screenshots
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5b168b1-9de8-4aa8-b69e-3bfb9526ec9c" />
 
