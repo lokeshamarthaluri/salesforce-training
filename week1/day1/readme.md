@@ -36,3 +36,5 @@ Opportunity
 This is when the traveler is seriously about to book a trip. Like they picked dates, destination and are ready to pay.
 
 ## 5. Trailhead Screenshots
+
+
