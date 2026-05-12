@@ -39,3 +39,7 @@ This is when the traveler is seriously about to book a trip. Like they picked da
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5b168b1-9de8-4aa8-b69e-3bfb9526ec9c" />
 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7650f0f0-ee17-460c-8984-722ad98dbdea" />
+
+
