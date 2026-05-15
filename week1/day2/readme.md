@@ -67,3 +67,7 @@ Fields:
 - Users can view reports and dashboards
 
 # 5. Screenshots from Trailhead
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-15 190305" src="https://github.com/user-attachments/assets/bad33543-e926-4455-a4cc-bec08df5547a" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-05-15 185345" src="https://github.com/user-attachments/assets/1cc09ecc-fc01-4833-b252-c4f79982cbc6" />
