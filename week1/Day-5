@@ -1,1 +1,210 @@
+# Day 5 - Apex Introduction
+
+## 1. What is Apex?
+
+Apex is a strongly typed, object-oriented programming language developed by Salesforce. It is used to execute flow and transaction control statements on the Salesforce platform. Apex allows developers to add custom business logic to Salesforce applications when declarative tools such as Flows and Validation Rules are not sufficient.
+
+### Key Features of Apex
+
+* Runs on Salesforce servers.
+* Similar syntax to Java and C#.
+* Supports object-oriented programming concepts.
+* Can interact with Salesforce database using SOQL and SOSL.
+* Used for Triggers, Classes, Batch Jobs, REST APIs, and Integrations.
+
+---
+
+## 2. Difference Between Flow vs Apex
+
+| Feature             | Flow                       | Apex                     |
+| ------------------- | -------------------------- | ------------------------ |
+| Type                | Declarative Tool           | Programming Language     |
+| Development         | Drag-and-drop              | Code-based               |
+| Complexity          | Simple to Medium           | Medium to Complex        |
+| Maintenance         | Easier                     | Requires coding skills   |
+| Performance         | Good for simple automation | Better for complex logic |
+| Reusability         | Limited                    | Highly reusable          |
+| Integration Support | Basic                      | Advanced                 |
+
+### Configuration vs Coding
+
+| Configuration                                   | Coding                                 |
+| ----------------------------------------------- | -------------------------------------- |
+| No-code/Low-code approach                       | Requires programming                   |
+| Faster development                              | More development time                  |
+| Easier for administrators                       | Requires developers                    |
+| Best for standard business processes            | Best for custom requirements           |
+| Examples: Flows, Validation Rules, Page Layouts | Examples: Apex Classes, Triggers, APIs |
+
+---
+
+## 3. Real Examples Where Apex Is Needed
+
+### Example 1: Student Scholarship Eligibility
+
+A university wants to automatically calculate scholarship eligibility based on attendance, GPA, extracurricular activities, and family income. Since multiple conditions and calculations are involved, Apex is required.
+
+### Example 2: External Payment Gateway Integration
+
+When students pay fees online, Salesforce must communicate with an external payment system through APIs. Apex is used to send and receive data securely.
+
+### Example 3: Automatic Seat Allocation
+
+When admission applications exceed available seats, Apex can implement a ranking algorithm to allocate seats based on merit scores and reservation categories.
+
+---
+
+## 4. Integrated System Design – College Management System
+
+### CRM (Customer Relationship Management)
+
+Salesforce CRM manages all interactions between students, faculty, administrative staff, and management. It centralizes student information and automates academic processes.
+
+### Objects
+
+#### Standard Objects
+
+* Account
+* Contact
+* User
+
+#### Custom Objects
+
+* Student
+* Course
+* Department
+* Faculty
+* Enrollment
+* Attendance
+* Examination
+* Fee Payment
+
+### Relationships
+
+#### Lookup Relationships
+
+* Student → Department
+* Faculty → Department
+
+#### Master-Detail Relationships
+
+* Enrollment → Student
+* Enrollment → Course
+* Attendance → Student
+* Examination → Student
+
+### Validation Rules
+
+1. Student age must be greater than 16 years.
+2. Fee amount cannot be negative.
+3. Attendance percentage cannot exceed 100%.
+4. Student email must follow a valid format.
+5. Enrollment cannot be created without selecting a course.
+
+### Flow Automation
+
+#### Admission Flow
+
+* Student submits application.
+* Flow creates Student record.
+* Welcome email is sent automatically.
+* Advisor is assigned.
+
+#### Fee Reminder Flow
+
+* Check pending fee payments.
+* Send reminder email before due date.
+
+#### Attendance Alert Flow
+
+* If attendance falls below 75%, notify student and faculty.
+
+### Apex Usage
+
+#### Apex Trigger
+
+Automatically calculate attendance percentage whenever an attendance record is added.
+
+#### Apex Class
+
+Calculate final grade using:
+
+* Attendance
+* Internal marks
+* External exam marks
+* Project score
+
+#### API Integration
+
+Connect Salesforce with:
+
+* Online payment gateway
+* University ERP system
+* SMS notification service
+
+---
+
+## 5. Pseudocode Examples
+
+### Example 1: Attendance Warning
+
+```
+IF attendance_percentage < 75
+    SEND warning email to student
+    NOTIFY faculty advisor
+END IF
+```
+
+### Example 2: Scholarship Eligibility
+
+```
+IF GPA >= 8.5
+AND attendance >= 85
+AND fee_status = "Paid"
+THEN
+    scholarship_status = "Eligible"
+ELSE
+    scholarship_status = "Not Eligible"
+END IF
+```
+
+### Example 3: Course Enrollment Validation
+
+```
+IF course_capacity > enrolled_students
+    CREATE enrollment
+ELSE
+    DISPLAY "Course Full"
+END IF
+```
+
+### Example 4: Fee Due Reminder
+
+```
+FOR each student
+    IF fee_due_date is within 7 days
+        SEND reminder email
+    END IF
+END FOR
+```
+
+---
+
+## 6. Reflection: Why Enterprise Systems Eventually Need Programming
+
+Enterprise systems often start with configuration tools because they are easy to use and quick to implement. However, as organizations grow, business requirements become more complex. Standard configurations cannot always handle advanced calculations, integrations, automation, and custom business rules.
+
+Programming languages like Apex become necessary because they provide:
+
+* Greater flexibility for custom business logic.
+* Integration with external applications and services.
+* Better performance for complex processes.
+* Scalability for large amounts of data.
+* Reusable and maintainable solutions.
+
+In the College Management System, Flows can automate standard tasks, but features such as scholarship calculations, seat allocation algorithms, payment integrations, and advanced reporting require Apex programming. Therefore, enterprise applications eventually need coding to meet evolving business requirements and support organizational growth.
+
+### Conclusion
+
+Apex extends Salesforce beyond declarative configuration by enabling custom logic, integrations, and enterprise-grade automation. While Flows and configuration tools solve many common requirements, Apex provides the flexibility and power needed for complex business scenarios such as those found in a College Management System.
 
