@@ -198,4 +198,5 @@ Fast and accurate search helps employees find information quickly, improving pro
 ## Trailhead Progress Screenshot
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74b47f81-2c5e-4ea9-807c-b5877d47b691" />
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcfd1555-2f7d-4d6e-a758-0c572bc976ad" />
 
