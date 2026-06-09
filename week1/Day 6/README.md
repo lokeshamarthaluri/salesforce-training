@@ -166,3 +166,34 @@ Automatic reactions help organizations:
 
 Salesforce uses triggers and automation tools to ensure that important business actions occur immediately when data changes, making enterprise applications more scalable, accurate, and efficient.
 
+# Light Completion Day
+
+## Modules Completed
+- Search Solution Basics
+- Agentforce 360 Platform Events Basics
+- Command-Line Interface
+## Key Learnings
+
+### Search Solution Basics
+- Salesforce search helps users quickly find records and information.
+
+### Agentforce 360 Platform Events Basics
+- Platform events allow systems to communicate through event-driven notifications.
+
+### Command-Line Interface
+- CLI tools help developers perform tasks faster through terminal commands.
+
+## Doubt / Question
+- How are platform events used in large Salesforce applications?
+
+## Platform Event Thinking
+When a student registers for a course, the registration event can automatically notify the student, instructor, and billing system.
+
+## CLI Reflection
+Developers use command-line tools because they are faster and can automate repetitive tasks. They also help manage projects efficiently.
+
+## Search Reflection
+Fast and accurate search helps employees find information quickly, improving productivity and reducing time spent searching for data.
+
+## Trailhead Progress Screenshot
+
