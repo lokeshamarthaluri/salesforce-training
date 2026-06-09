@@ -196,3 +196,6 @@ Developers use command-line tools because they are faster and can automate repet
 Fast and accurate search helps employees find information quickly, improving productivity and reducing time spent searching for data.
 
 ## Trailhead Progress Screenshot
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74b47f81-2c5e-4ea9-807c-b5877d47b691" />
+
+
